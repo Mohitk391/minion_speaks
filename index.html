@@ -5,10 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minion Speaks</title>
-    <script src="app.js" type="text/javascript"></script>
+    <style>
+        body {
+            margin : 0px;
+            padding: 0px;
+        }
+        h1 {
+            width : 100%;
+            height : 10vh;
+            background-color : rgb(241, 198, 77);
+            text-align: center;
+            margin : 0 0 1.5rem 0 ;
+            padding-top: 5px;
+        }
+        #input-user  {
+            border : solid 1px black;
+            display : block;
+            width : 45%;
+            height : 10vh;
+            margin : 1em 10% 0.5em 25%;
+            padding : 1rem;
+        }
+
+        #btn-translate {
+            margin : 0 20% 1rem 25%;
+            background-color : rgb(241, 198, 77);
+            width : 20rem;
+            height : 10vh;
+            border : unset;
+            text-align: center;
+            font-size: larger;
+        }
+
+        #translate-text {
+            margin : 0 20% 1rem 25%;
+            font-size: larger;
+        }
+
+        #output-text {
+            border : solid 1px black;
+            display : block;
+            width : 45%;
+            height : 5vh;
+            margin : 1em 10% 0.5em 25%;
+            padding : 1rem;
+        }
+
+        #about {
+            width : 100%;
+            height : 15vh;
+            background-color : rgb(241, 198, 77);
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            
+
+        }
+        h2 {
+            padding-bottom: 0;
+        }
+        p {
+            font-size: large;
+            padding-top: 0;
+        }
+    </style>
+
 </head>
 <body>
     <h1>This is Minion Speaks</h1>
-    <button id="btn"></button>
+    <textarea id="input-user" placeholder="Enter the text you want to translate into banana language"></textarea><br>
+    <button id="btn-translate">Translate to banana</button><br>
+    <div id="translate-text">Translation will come here 👇</div>
+    <div id="output-text"></div>
+    <div id="about">
+            <h2>about</h2>
+            <p>whatever is working here ... I did it myself, so please help me by proviiding a feedback for the saem. Please don't mind the spelling mistakes.</p>
+
+    </div>
+    <script src="app.js" type="text/javascript"></script>
 </body>
 </html>
